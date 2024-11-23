@@ -32,3 +32,10 @@ export const Button = styled.button `
     font-weight: bold;
     cursor: pointer;
 `
+
+export const Input = styled.input `
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 8px;
+`
