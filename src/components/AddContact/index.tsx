@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from "react"
 import * as S from "./styles"
-import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "../../redux/Contacts/slice";
+import { useDispatch, useSelector } from "react-redux"
+import { addContact } from "../../redux/Contacts/slice"
 
 interface AddContactProps {
-    isVisible: boolean;
-    setIsVisible: (value: boolean) => void;
+    isVisible: boolean
+    setIsVisible: (value: boolean) => void
 }
 
 const AddContact: React.FC<AddContactProps> = ({ isVisible, setIsVisible }) => {
@@ -45,7 +45,7 @@ const AddContact: React.FC<AddContactProps> = ({ isVisible, setIsVisible }) => {
         setIsVisible(false)
     }
 
-    if (!isVisible) return null;
+    if (!isVisible) return null
 
     return (
         <S.Container>
@@ -59,7 +59,7 @@ const AddContact: React.FC<AddContactProps> = ({ isVisible, setIsVisible }) => {
                 </S.Flex>
             </S.Form>
         </S.Container>
-    );
-};
+    )
+}
 
-export default AddContact;
+export default AddContact
